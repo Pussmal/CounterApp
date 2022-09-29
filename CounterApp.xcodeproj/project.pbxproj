@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		5BE72AD028E5BB03000F9237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72ACF28E5BB03000F9237 /* AppDelegate.swift */; };
 		5BE72AD228E5BB03000F9237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AD128E5BB03000F9237 /* SceneDelegate.swift */; };
-		5BE72AD428E5BB03000F9237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AD328E5BB03000F9237 /* ViewController.swift */; };
-		5BE72AD728E5BB03000F9237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72AD528E5BB03000F9237 /* Main.storyboard */; };
+		5BE72AD428E5BB03000F9237 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AD328E5BB03000F9237 /* CounterViewController.swift */; };
 		5BE72AD928E5BB04000F9237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72AD828E5BB04000F9237 /* Assets.xcassets */; };
 		5BE72ADC28E5BB04000F9237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72ADA28E5BB04000F9237 /* LaunchScreen.storyboard */; };
+		5BE72AE428E5BB51000F9237 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5BE72AE328E5BB51000F9237 /* .gitignore */; };
+		5BE72AE628E5BFA2000F9237 /* CounterDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AE528E5BFA2000F9237 /* CounterDesign.swift */; };
+		5BE72AE828E5C4CE000F9237 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AE728E5C4CE000F9237 /* View+Extensions.swift */; };
+		5BE72AEB28E5C879000F9237 /* AddCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE72AEA28E5C879000F9237 /* AddCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5BE72ACC28E5BB03000F9237 /* CounterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE72ACF28E5BB03000F9237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BE72AD128E5BB03000F9237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BE72AD328E5BB03000F9237 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5BE72AD628E5BB03000F9237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BE72AD328E5BB03000F9237 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		5BE72AD828E5BB04000F9237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE72ADB28E5BB04000F9237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE72ADD28E5BB04000F9237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE72AE328E5BB51000F9237 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5BE72AE528E5BFA2000F9237 /* CounterDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDesign.swift; sourceTree = "<group>"; };
+		5BE72AE728E5C4CE000F9237 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		5BE72AEA28E5C879000F9237 /* AddCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		5BE72AC328E5BB03000F9237 = {
 			isa = PBXGroup;
 			children = (
+				5BE72AE328E5BB51000F9237 /* .gitignore */,
 				5BE72ACE28E5BB03000F9237 /* CounterApp */,
 				5BE72ACD28E5BB03000F9237 /* Products */,
 			);
@@ -58,13 +65,39 @@
 			children = (
 				5BE72ACF28E5BB03000F9237 /* AppDelegate.swift */,
 				5BE72AD128E5BB03000F9237 /* SceneDelegate.swift */,
-				5BE72AD328E5BB03000F9237 /* ViewController.swift */,
-				5BE72AD528E5BB03000F9237 /* Main.storyboard */,
+				5BE72AEC28E5CD3A000F9237 /* ViewController */,
+				5BE72AED28E5CD4A000F9237 /* Helper */,
+				5BE72AE928E5C4EC000F9237 /* Extension */,
 				5BE72AD828E5BB04000F9237 /* Assets.xcassets */,
 				5BE72ADA28E5BB04000F9237 /* LaunchScreen.storyboard */,
 				5BE72ADD28E5BB04000F9237 /* Info.plist */,
 			);
 			path = CounterApp;
+			sourceTree = "<group>";
+		};
+		5BE72AE928E5C4EC000F9237 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5BE72AE728E5C4CE000F9237 /* View+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5BE72AEC28E5CD3A000F9237 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE72AD328E5BB03000F9237 /* CounterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5BE72AED28E5CD4A000F9237 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5BE72AEA28E5C879000F9237 /* AddCounter.swift */,
+				5BE72AE528E5BFA2000F9237 /* CounterDesign.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE72AE428E5BB51000F9237 /* .gitignore in Resources */,
 				5BE72ADC28E5BB04000F9237 /* LaunchScreen.storyboard in Resources */,
 				5BE72AD928E5BB04000F9237 /* Assets.xcassets in Resources */,
-				5BE72AD728E5BB03000F9237 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE72AD428E5BB03000F9237 /* ViewController.swift in Sources */,
+				5BE72AE628E5BFA2000F9237 /* CounterDesign.swift in Sources */,
+				5BE72AD428E5BB03000F9237 /* CounterViewController.swift in Sources */,
 				5BE72AD028E5BB03000F9237 /* AppDelegate.swift in Sources */,
+				5BE72AEB28E5C879000F9237 /* AddCounter.swift in Sources */,
+				5BE72AE828E5C4CE000F9237 /* View+Extensions.swift in Sources */,
 				5BE72AD228E5BB03000F9237 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5BE72AD528E5BB03000F9237 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BE72AD628E5BB03000F9237 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5BE72ADA28E5BB04000F9237 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +320,9 @@
 				INFOPLIST_FILE = CounterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +330,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pusmall.CounterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,9 +351,9 @@
 				INFOPLIST_FILE = CounterApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +361,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pusmall.CounterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
