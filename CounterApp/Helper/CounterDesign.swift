@@ -32,7 +32,7 @@ enum TextFontStyle {
 enum ColorStyle {
     case purple, yellow
     
-    var colorSetings: UIColor {
+    var colorSettings: UIColor {
         switch self {
         case .purple:
             return #colorLiteral(red: 0.6941176471, green: 0.6980392157, blue: 1, alpha: 1)
