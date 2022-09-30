@@ -24,12 +24,12 @@ class CounterViewController: UIViewController {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("ЖМИ!!!", for: .normal)
-        button.backgroundColor = ColorStyle.yellow.colorSetings
+        button.backgroundColor = ColorStyle.yellow.colorSettings
         button.setTitleColor(TextFontStyle.body.textColor, for: .normal)
         button.titleLabel?.font = TextFontStyle.title.textFont
         button.layer.cornerRadius = 10
         button.titleLabel?.textColor = TextFontStyle.body.textColor
-        button.addTarget(self, action: #selector(addCountButtonTaped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(addCountButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -42,19 +42,19 @@ class CounterViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        setingsCounterVC()
+        settingsCounterVC()
     }
     
     // MARK: - Private Methods
-    private func setingsCounterVC() {
-        view.backgroundColor = ColorStyle.purple.colorSetings
-        creatViews()
+    private func settingsCounterVC() {
+        view.backgroundColor = ColorStyle.purple.colorSettings
+        createViews()
     }
     
-    private func creatViews() {
+    private func createViews() {
         view.addSubview(countLabel)
         view.addSubview(addCountButton)
-        countLabel.text = "Значение счётчика: \(addCounter.returnCount())"
+        countLabel.text = "Значение счётчика: \(addCounter.count)"
         activateConstraints()
     }
     
@@ -71,12 +71,11 @@ class CounterViewController: UIViewController {
         ])
     }
     
-    @objc private func addCountButtonTaped() {
+    @objc private func addCountButtonTapped() {
         addCountButton.showAnimation {
             self.addCounter.addOne()
-            self.countLabel.text = "Значение счётчика: \(self.addCounter.returnCount())"
+            self.countLabel.text = "Значение счётчика: \(self.addCounter.count)"
         }
     }
-    
 }
 

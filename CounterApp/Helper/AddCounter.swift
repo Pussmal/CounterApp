@@ -8,14 +8,9 @@
 import Foundation
 
 struct AddCounter {
-    private var count = 0
+    private(set) var count = 0
     
     mutating func addOne() {
         self.count += 1
     }
-    
-    func returnCount() -> Int {
-        return count
-    }
-
 }
